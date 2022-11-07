@@ -1,0 +1,19 @@
+@mixin bouton {
+    padding: 25px;
+    border-radius: 55px;
+    background-image: linear-gradient($secondaire-color, $primaire-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+    width: 260px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgb(145, 145, 145, 0.4);
+}
+
+@mixin bouton__hover {
+    box-shadow: 5px 8px 8px rgb(145, 145, 145, 1);
+    background-image: linear-gradient(lighten($secondaire-color, 4%), lighten($primaire-color, 4%));
+}

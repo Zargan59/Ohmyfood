@@ -14,13 +14,16 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header__acceuil">
         <div class=" logo">
             <img src="images/logo/ohmyfood.png" alt="Logo_ohmyfood">
         </div>
     </header>
 
-    <main class="main__accueil">
+    <main>
+        <!-- SpinLoader -->
+        <div class="loader">
+        </div>
         <!-- Localisation -->
         <div class=" localisation">
             <p><i class="fa-solid fa-location-dot"></i> Paris, Belleville</p>
@@ -32,9 +35,9 @@
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             </div>
-            <!-- Boutton -->
-            <div class="boutton">
-                <button class="explore">Explorer nos restaurants</button>
+            <!-- Bouton -->
+            <div class="explore">
+                <button class="bouton">Explorer nos restaurants</button>
             </div>
         </div>
 
@@ -42,10 +45,10 @@
 
         <!-- Tuto -->
 
-        <div class="fonctionnement">
-            <h2>Fonctionnement</h2>
-        </div>
         <div class="tuto">
+            <div class="fonctionnement">
+                <h2>Fonctionnement</h2>
+            </div>
             <span class="choix">
                 <div class="nombre">
                     <span class="etape">1</span>
@@ -78,27 +81,21 @@
         </div>
 
         <!--Liste Restaurants-->
-
         <div class="restaurants">
             <div class="text">
                 <h2>Restaurants</h2>
             </div>
-
             <div class="menu__accueil">
-
-                <a href="#">
+                <a href="#" class="carte new">
                     <figure>
                         <div class="bandeau">
                             <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
                                 alt="Menu la palette du goût">
-                            <div class="new">
-                                <p>Nouveau</p>
-                            </div>
                         </div>
                         <figcaption>
                             <div class="nom">
                                 <h3>La palette du goût</h3>
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
                             </div>
                             <div class="lieux">
                                 <p>Ménilmontant</p>
@@ -107,18 +104,15 @@
                     </figure>
                 </a>
 
-                <a href="#">
+                <a href="La_note_enchante.html" class="carte new">
                     <figure>
                         <div class="bandeau">
                             <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Menu la note enchantée">
-                            <div class="new">
-                                <p>Nouveau</p>
-                            </div>
                         </div>
                         <figcaption>
                             <div class="nom">
                                 <h3>La note enchantée</h3>
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
                             </div>
                             <div class="lieux">
                                 <p>Charonne</p>
@@ -127,13 +121,13 @@
                     </figure>
                 </a>
 
-                <a href="A_la_Francaise.html">
+                <a href="A_la_Francaise.html" class="carte">
                     <figure>
                         <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Menu A la francaise">
                         <figcaption>
                             <div class="nom">
                                 <h3>À la française</h3>
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
                             </div>
                             <div class="lieux">
                                 <p>Cité Rouge</p>
@@ -142,14 +136,14 @@
                     </figure>
                 </a>
 
-                <a href="#">
+                <a href="#" class="carte">
                     <figure>
                         <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
                             alt="Menu le délice des sens">
                         <figcaption>
                             <div class="nom">
                                 <h3>Le délice des sens</h3>
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-heart"></i>
                             </div>
                             <div class="lieux">
                                 <p>Folie-Méricourt</p>
@@ -158,22 +152,21 @@
                     </figure>
                 </a>
             </div>
-
-
-            <footer>
-                <div class="bas_page">
-                    <h4>ohmyfood</h4>
-                    <div class="lien">
-                        <a href="#"> <i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-                        <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-                        <a href="#">Mentions légales</a>
-                        <a href="#">Contact</a>
-                    </div>
-
-                </div>
-            </footer>
-
         </div>
+
+
+        <footer>
+            <div class="bas_page">
+                <h4>ohmyfood</h4>
+                <div class="lien">
+                    <a href="#"> <i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+                    <a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+                    <a href="#">Mentions légales</a>
+                    <a href="mailto:contact@ohmyfood.com">Contact</a>
+                </div>
+            </div>
+        </footer>
+
     </main>
 </body>
 
