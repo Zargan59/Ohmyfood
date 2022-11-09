@@ -481,7 +481,7 @@ footer i {
     opacity: 1;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 960px) {
   .localisation {
     margin: 20px auto;
     width: 30%;
@@ -496,13 +496,27 @@ footer i {
   .background {
     margin-top: 20px;
   }
-  .tuto .fonctionnement {
+  .fonctionnement {
     margin: 0 auto;
     margin-top: 40px;
+    justify-content: center;
+    display: flex;
+  }
+  .tuto {
+    flex-direction: row;
+    margin-top: 20px;
+    height: 80px;
   }
   .tuto .choix {
-    width: 50%;
+    width: fit-content;
     margin: 0 auto;
+  }
+  .tuto i {
+    padding-right: 10px;
+  }
+  .tuto .text {
+    margin: 0 auto;
+    padding: 0 60px;
   }
   .restaurants .text {
     padding: 20px 0;
@@ -514,41 +528,42 @@ footer i {
     padding: 0px;
     font-size: 26px;
   }
-}
-.menu__accueil {
-  display: grid;
-  margin: 0 5%;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
-  grid-auto-rows: minmax(100px, auto);
-}
-.menu__accueil .carte {
-  width: 100%;
-}
-.menu__accueil figure {
-  margin: 0px;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-}
-footer .bas_page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: fit-content;
-}
-footer .bas_page h4 {
-  margin-right: auto;
-}
-footer .bas_page i {
-  width: 20px;
-  margin-left: -30px;
-}
-
-@media (min-width: 800px) {
+  .menu__accueil {
+    display: grid;
+    margin: 0 5%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .menu__accueil .carte {
+    width: 100%;
+  }
+  .menu__accueil figure {
+    margin: 0px;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer .lien {
+    flex-direction: row;
+    gap: 60px;
+  }
+  footer .bas_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    padding-bottom: 30px;
+  }
+  footer .bas_page h4 {
+    justify-content: center;
+  }
+  footer .bas_page i {
+    width: 20px;
+    margin-left: -30px;
+  }
   .header--modifier {
     margin: 0 250px;
   }
@@ -570,20 +585,21 @@ footer .bas_page i {
     justify-content: center;
   }
   .image_restau img {
-    border: 5px solid #99E2D0;
+    border: 5px solid #353535;
     border-radius: 20px;
     width: 30%;
     height: auto;
   }
   .carte__restau {
-    margin-top: 40px;
     border-radius: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    margin: 20px auto;
+    margin: auto;
+    margin-top: 40px;
     border-radius: 25px;
+    margin-bottom: 50px;
   }
   .carte__restau h2 {
     display: flex;

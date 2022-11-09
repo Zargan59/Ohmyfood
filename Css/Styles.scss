@@ -501,7 +501,7 @@ footer {
     }
 }
 
-@media (min-width:800px) {
+@media (min-width:960px) {
 
     // Media Queries Accueil
     .localisation {
@@ -521,16 +521,32 @@ footer {
         margin-top: 20px;
     }
 
-    .tuto {
+    .fonctionnement {
+        margin: 0 auto;
+        margin-top: 40px;
+        justify-content: center;
+        display: flex;
+    }
 
-        & .fonctionnement {
-            margin: 0 auto;
-            margin-top: 40px;
-        }
+    .tuto {
+        flex-direction: row;
+        margin-top: 20px;
+        height: 80px;
+
+
 
         & .choix {
-            width: 50%;
+            width: fit-content;
             margin: 0 auto;
+        }
+
+        & i {
+            padding-right: 10px;
+        }
+
+        & .text {
+            margin: 0 auto;
+            padding: 0 60px;
         }
     }
 
@@ -549,52 +565,57 @@ footer {
             font-size: 26px;
         }
     }
-}
 
-.menu__accueil {
-    // width: 80%;
-    display: grid;
-    margin: 0 5%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+    .menu__accueil {
+        // width: 80%;
+        display: grid;
+        margin: 0 5%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
 
-    grid-auto-rows: minmax(100px, auto);
+        grid-auto-rows: minmax(100px, auto);
 
 
-    & .carte {
-        width: 100%
+        & .carte {
+            width: 100%
+        }
+
+        & figure {
+            margin: 0px;
+        }
     }
 
-    & figure {
-        margin: 0px;
-    }
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-
-    & .bas_page {
+    footer {
         display: flex;
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: fit-content;
 
-        & h4 {
-            margin-right: auto;
+        & .lien {
+            flex-direction: row;
+            gap: 60px;
         }
 
-        & i {
-            width: 20px;
-            margin-left: -30px;
+        & .bas_page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: fit-content;
+            padding-bottom: 30px;
+
+            & h4 {
+                // margin-right: auto;
+                justify-content: center;
+            }
+
+            & i {
+                width: 20px;
+                margin-left: -30px;
+            }
         }
     }
-}
 
-// MediaQueries Restau
-@media (min-width:800px) {
 
+    // MediaQueries Restau
 
     .header--modifier {
         margin: 0 250px;
@@ -622,32 +643,24 @@ footer {
 
 
         & img {
-            border: 5px solid $tertiaire-color;
+            border: 5px solid $footer_background-color;
             border-radius: 20px;
             width: 30%;
             height: auto;
         }
-
-        // &::before {
-        //     content: "A la française";
-        //     position: absolute;
-        //     font-family: Shrikhand;
-        //     top: 20%;
-        //     right: 20%;
-        //     font-size: 28px;
-        // }
     }
 
     .carte__restau {
-        margin-top: 40px;
         border-radius: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
 
         width: 50%;
-        margin: 20px auto;
+        margin: auto;
+        margin-top: 40px;
         border-radius: 25px;
+        margin-bottom: 50px;
 
         & h2 {
             display: flex;
@@ -667,7 +680,5 @@ footer {
         }
 
     }
-
-
 
 }
