@@ -49,7 +49,6 @@
   }
   99% {
     transform: scale(0);
-    background-color: green;
   }
   100% {
     opacity: 0;
