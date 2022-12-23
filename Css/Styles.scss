@@ -6,6 +6,7 @@
 
 main {
     margin: 0 20px;
+   
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 
 footer {
     background-color: $footer_background-color;
-    margin: -20px;
+    // margin: -20px;
     padding-bottom: 10px;
 
     & .bas_page {

@@ -74,7 +74,7 @@
   align-items: center;
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(145, 145, 145, 0.4);
-  padding: 10px 0;
+  padding: 30px 0;
 }
 .tuto .nombre {
   margin: -30px;
@@ -180,6 +180,7 @@
 
 .restaurants {
   margin: 20px -20px;
+  margin-bottom: 0px;
   background-color: rgb(233, 233, 233);
 }
 
@@ -191,6 +192,7 @@
 
 .menu__accueil {
   padding-bottom: 50px;
+  margin-bottom: -20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -597,7 +599,6 @@ body {
 
 footer {
   background-color: #353535;
-  margin: -20px;
   padding-bottom: 10px;
 }
 footer .bas_page {
